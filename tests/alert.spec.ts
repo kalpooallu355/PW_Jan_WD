@@ -95,7 +95,7 @@ await page.getByRole('button', { name: 'Yes' }).click();
 
 })
 
-test.only ("Minimize and Maximize handling", async ({page}) =>{
+test ("Minimize and Maximize handling", async ({page}) =>{
 await page.goto("https://www.leafground.com/alert.xhtml")
 await page.locator("(//span[@class='ui-button-text ui-c'])[8]").click()
 await page.waitForTimeout(7000)
