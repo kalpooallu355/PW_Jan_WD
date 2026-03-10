@@ -1,5 +1,7 @@
 import test from '@playwright/test'
 
+//removed test.only method 
+
 test("alert handling", async ({ page}) => {
     page.once ('dialog', alertType => {
 
