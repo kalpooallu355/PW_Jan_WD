@@ -1,6 +1,7 @@
 import test from '@playwright/test'
 
 //removed test.only method 
+// demonstrating git commit
 
 test("alert handling", async ({ page}) => {
     page.once ('dialog', alertType => {
